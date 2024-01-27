@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #331D2C;
+    --secondary-color: #EFE1D1;
+
+    --modal-primary-color: #A78295;
+    --modal-secondary-color: #331D2C;
+
+    --modal-button-primary-color:#EFE1D1;
+    --modal-button-secondary-color:#331D2C;
+
+}
+
+.light-theme{
+    --primary-color: #EFE1D1;
+    --secondary-color:#331D2C;
+
+    --modal-primary-color: #331D2C;
+    --modal-secondary-color: #A78295;
+
+    --modal-button-primary-color:#331D2C;
+    --modal-button-secondary-color:#EFE1D1;
+
+}
+
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#icon{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+  }
+
+
+.container{
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    justify-content: center;
+}
+
+.container h1{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.jumbotron{
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    height: 350px;
+    width: 800px;
+    box-shadow: 0 4px 21px -12px rgba(245, 245, 245, 0.79);
+}
+
+.jumbotron h3{
+    margin-bottom: 2rem !important;
+}
+
+.form-control{
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.form-control::placeholder{
+    color: #efe1d18d !important;
+}
+
+.btn-primary{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    transition: all 0.6s linear;
+}
+
+.well{
+    background-color: var(--modal-primary-color);
+    color: var(--modal-secondary-color);
+    border: 2px solid var(--modal-secondary-color);
+    border-radius: 5px;
+}
+
+.well h3{
+    font-weight: bolder;
+}
+
+.well button{
+    background-color: var(--modal-button-secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--modal-button-primary-color);
+}
+
+.well button:hover{
+    background-color: var(--modal-button-primary-color) !important;
+    color: var(--modal-button-secondary-color);
+    border: 1px solid var(--modal-button-secondary-color);
+    transition: all 0.6s linear;
+}
